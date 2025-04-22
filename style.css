@@ -35,11 +35,9 @@ body {
 }
 
 footer {
-    height: 72px;
     background-color: #2A1F4B;
     border-top: #F6D600 solid;
     border-width: 3px;
-
 }
 
 .categories {
@@ -140,13 +138,15 @@ footer {
 
 
 .pause-button {
-    height: 70px;
-    width: 150px;
+    height: 60px;
+    width: 90%;
+    font-size: 2rem;
 }
 
 .quit-button {
     height: 60px;
-    width: 125px;
+    width: 90%;
+    font-size: 2rem;
 }
 
 .timer {
@@ -154,28 +154,38 @@ footer {
     color: black;
 }
 
-@media screen and (max-width: 768px) {
-    table, thead, tbody, th, td, tr {
-      display: block;
-    }
-  
-    thead {
-      display: none;
-    }
-  
-    td {
-      position: relative;
-      padding-left: 50%;
-    }
-  
-    td::before {
-      position: absolute;
-      top: 0;
-      left: 10px;
-      width: 45%;
-      white-space: nowrap;
-      content: attr(data-label);
-      font-weight: bold;
-    }
-  }
-  
+input::placeholder {
+    font-size: 1rem;
+    color: rgb(204, 204, 204);;
+}
+
+.login-form {
+    background-color: white;
+    width: 400px;
+    height: 100%;
+}
+
+.login-form h2 {
+    color: #2A1F4B;
+}
+
+.login-form input {
+    border: 2px solid rgb(204, 204, 204);
+    border-radius: 10px;
+    height: 40px;
+    width: 100%;
+}
+.login-form h5 {
+    color: #3F306F;
+}
+.login-button {
+    background-color: #F6D600;
+    color: black;
+    width: 50%;
+}
+
+.signup-button {
+    background-color: #3F306F;
+    color: white;
+    width: 50%;
+}
