@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Categories - Quizzilo</title>
+  <link rel="stylesheet" href="css/bootstrap.min.css"/>
+  <link rel="stylesheet" href="bootstrap-icons/bootstrap-icons.css"/>
+  <link rel="stylesheet" href="style.css"/>
+  <script src="js/bootstrap.bundle.min.js"></script>
+</head>
+<body class="d-flex flex-column min-vh-100">
+  <!-- Epic Navbar -->
+  <nav class="navbar navbar-dark navbar-expand-lg py-0">
+    <div class="container-fluid">
+      <div class="nav-item dropdown">
+        <a href="#" class="ms-5 d-flex align-items-center text-white text-decoration-none" id="profileDropdown" data-bs-toggle="dropdown" aria-expanded="false">
+          <img src="images/profile_pic.png" alt="Profile Picture" class="rounded-4" style="width: 48px; height: 48px;">
+        </a>
+        <ul class="dropdown-menu">
+          <li><a class="dropdown-item" href="profile.html">Profile</a></li>
+          <li><a class="dropdown-item" href="#">Another action</a></li>
+          <li><hr class="dropdown-divider"></li>
+          <li><a class="dropdown-item" href="#">Something else here</a></li>
+        </ul>
+      </div>
+      <a class="navbar-brand fs-1 ms-lg-5 ms-3" href="index.html">Quizzilo</a>
+      <button class="navbar-toggler me-lg-5 me-5" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0 fs-5">
+          <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+          <li class="nav-item"><a class="nav-link active" aria-current="page" href="#">Categories</a></li>
+        </ul>
+        <form class="d-flex" role="search">
+          <div class="input-group">
+            <span class="input-group-text rounded-start-4">
+              <i class="bi bi-search" style="opacity: 30%;"></i>
+            </span>
+            <input type="text" class="form-control rounded-end-4" placeholder="Search.."/>
+          </div>
+        </form>
+      </div>
+    </div>
+  </nav>
+
+  <main class="flex-fill">
+  <!-- Categories Tabs -->
+  <section class="container mt-5 pt-3">
+    <h2 class="text-center mb-4 mt-4">Explore Categories</h2>
+    <div class="row g-4">
+      <!-- Categories -->
+      <div class="col-sm-6 col-md-4 col-lg-3">
+        <div class="card text-center border-0 shadow rounded-4 bg-light p-3">
+          <i class="bi bi-geo-alt fs-1 text-primary"></i>
+          <h5 class="mt-2">Geography</h5>
+        </div>
+      </div>
+
+      <div class="col-sm-6 col-md-4 col-lg-3">
+        <div class="card text-center border-0 shadow rounded-4 bg-light p-3">
+          <i class="bi bi-controller fs-1 text-success"></i>
+          <h5 class="mt-2">Gaming</h5>
+        </div>
+      </div>
+
+      <div class="col-sm-6 col-md-4 col-lg-3">
+        <div class="card text-center border-0 shadow rounded-4 bg-light p-3">
+          <i class="bi bi-film fs-1 text-danger"></i>
+          <h5 class="mt-2">Movies</h5>
+        </div>
+      </div>
+
+      <div class="col-sm-6 col-md-4 col-lg-3">
+        <div class="card text-center border-0 shadow rounded-4 bg-light p-3">
+          <i class="bi bi-music-note fs-1 text-warning"></i>
+          <h5 class="mt-2">Music</h5>
+        </div>
+      </div>
+
+      <div class="col-sm-6 col-md-4 col-lg-3">
+        <div class="card text-center border-0 shadow rounded-4 bg-light p-3">
+          <i class="bi bi-bank fs-1 text-info"></i>
+          <h5 class="mt-2">Politics</h5>
+        </div>
+      </div>
+
+      <div class="col-sm-6 col-md-4 col-lg-3">
+        <div class="card text-center border-0 shadow rounded-4 bg-light p-3">
+          <i class="bi bi-award fs-1 text-secondary"></i>
+          <h5 class="mt-2">Sports</h5>
+        </div>
+      </div>
+
+      <div class="col-sm-6 col-md-4 col-lg-3">
+        <div class="card text-center border-0 shadow rounded-4 bg-light p-3">
+          <i class="bi bi-book fs-1 text-dark"></i>
+          <h5 class="mt-2">History</h5>
+        </div>
+      </div>
+    </div>
+  </section>
+  </main>
+  
+  <!-- Footer -->
+  <footer class="text-white d-flex justify-content-between align-items-center px-4 mt-5">
+    <p class="mb-0">© 2025 Copyright</p>
+    <div class="d-flex gap-3 fs-4">
+      <a href="#" class="text-white"><i class="bi bi-instagram"></i></a>
+      <a href="#" class="text-white"><i class="bi bi-twitter"></i></a>
+      <a href="#" class="text-white"><i class="bi bi-envelope-fill"></i></a>
+      <a href="#" class="text-white"><i class="bi bi-youtube"></i></a>
+    </div>
+  </footer>
+</body>
+</html>

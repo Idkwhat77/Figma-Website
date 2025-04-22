@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="bootstrap-icons/bootstrap-icons.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="js/bootstrap.bundle.min.js"></script>
+</head>
+<body class="d-flex flex-column min-vh-100">
+    <!-- Epic Navbar!-->
+    <nav class="navbar navbar-dark navbar-expand-lg py-0">
+      <div class="container-fluid">
+        <div class="nav-item dropdown">
+          <a href="#" class="ms-5 d-flex align-items-center text-white text-decoration-none" id="profileDropdown" data-bs-toggle="dropdown" aria-expanded="false">
+            <img src="images/profile_pic.png" alt="Profile Picture" class="rounded-4" style="width: 48px; height: 48px;">
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="profile.html">Profile</a></li>
+            <li><a class="dropdown-item" href="#">Another action</a></li>
+            <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item" href="#">Something else here</a></li>
+          </ul>
+        </div>
+        <a class="navbar-brand fs-1 ms-lg-5 ms-3" href="index.html">Quizzilo</a>
+        <button class="navbar-toggler me-lg-5 me-5" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0 fs-5">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="about.html">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="categories.html">Categories</a>
+            </li>
+          </ul>
+          <form class="d-flex" role="search">
+            <div class="input-group">
+              <span class="input-group-text rounded-start-4">
+                <i class="bi bi-search" style="opacity: 30%;"></i>
+              </span>
+              <input type="text" class="form-control rounded-end-4" style="width:180px;" placeholder="Search..">
+            </div>                     
+          </form>
+        </div>
+      </div>
+    </nav>
+
+    <main class="flex-fill">
+    <!-- Main Content-->
+    <nav class="categories rounded-start-4">
+      <h5 class="mb-3 border-bottom pb-2"><i class = "bi bi-list"></i>Popular Categories</h5>
+      <ul class="list-unstyled">
+        <li class="mb-2"><i class="bi bi-geo-alt"></i>  Geography</li>
+        <li class="mb-2"><i class="bi bi-controller"></i>  Gaming</li>
+        <li class="mb-2"><i class="bi bi-film"></i>  Movies</li>
+        <li class="mb-2"><i class="bi bi-music-note"></i>  Music</li>
+        <li class="mb-2"><i class="bi bi-bank"></i>  Politics</li>
+        <li class="mb-2"><i class="bi bi-award"></i>  Sports</li>
+        <li class="mb-2"><i class="bi bi-book"></i>  History</li>
+      </ul>
+    </nav> 
+    <section class="quiz-headboard container ms-5">
+      <h2 class="text-center mb-lg-4">Top Quizzes Today</h2>
+      <div class="row g-3">
+        <div class="col-lg-12">
+          <a href="quizzes/quiz1.html">
+          <div class="quiz-card featured" style="background-image: url('images/map.png');">
+            <div class="overlay">
+              <h3>Countries of the World</h3>
+              <p>By Master_Diviner | Geography</p>
+            </div>
+          </div>
+          </a>
+        </div>
+        <div class="col-md-4">
+          <a href="quizzes/quiz2.html">
+          <div class="quiz-card" style="background-image: url('images/grass.jpg');">
+            <div class="overlay">
+              <h5>All Minecraft Mobs</h5>
+              <p>By amsokdadosd | Gaming</p>
+            </div>
+          </div>
+          </a>
+        </div>
+        <div class="col-md-4">
+          <a href="quiz1.html">
+          <div class="quiz-card" style="background-image: url('images/genshin.png');">
+            <div class="overlay">
+              <h5>Genshin Characters (5.5)</h5>
+              <p>By chunchun | Gaming</p>
+            </div>
+          </div>
+          </a>
+        </div>
+        <div class="col-md-4">
+          <a href="quiz1.html">
+          <div class="quiz-card" style="background-image: url('images/spiderman.jpg');">
+            <div class="overlay">
+              <h5>Marvel Superheroes</h5>
+              <p>By 1234fgbd | Movies</p>
+            </div>
+          </div>
+          </a>
+        </div>
+      </div>
+    </section>    
+    </main>
+
+    <!-- Footer -->
+    <footer class="text-white d-flex justify-content-between align-items-center px-4 mt-5">
+      <p class="mb-0">© 2025 Copyright</p>
+      <div class="d-flex gap-3 fs-4">
+        <a href="#" class="text-white"><i class="bi bi-instagram"></i></a>
+        <a href="#" class="text-white"><i class="bi bi-twitter"></i></a>
+        <a href="#" class="text-white"><i class="bi bi-envelope-fill"></i></a>
+        <a href="#" class="text-white"><i class="bi bi-youtube"></i></a>
+      </div>
+    </footer>
+</body>
+</html>

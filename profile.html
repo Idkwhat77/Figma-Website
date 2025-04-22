@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>About - Quizzilo</title>
+  <link rel="stylesheet" href="css/bootstrap.min.css"/>
+  <link rel="stylesheet" href="bootstrap-icons/bootstrap-icons.css"/>
+  <link rel="stylesheet" href="style.css"/>
+  <script src="js/bootstrap.bundle.min.js"></script>
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="navbar navbar-dark navbar-expand-lg py-0">
+    <div class="container-fluid">
+      <div class="nav-item dropdown">
+        <a href="#" class="ms-5 d-flex align-items-center text-white text-decoration-none" id="profileDropdown" data-bs-toggle="dropdown" aria-expanded="false">
+          <img src="images/profile_pic.png" alt="Profile Picture" class="rounded-4" style="width: 48px; height: 48px;">
+        </a>
+        <ul class="dropdown-menu">
+          <li><a class="dropdown-item active" aria-current="page" href="#">Action</a></li>
+          <li><a class="dropdown-item" href="#">Another action</a></li>
+          <li><hr class="dropdown-divider"></li>
+          <li><a class="dropdown-item" href="#">Something else here</a></li>
+        </ul>
+      </div>
+      <a class="navbar-brand fs-1 ms-lg-5 ms-3" href="index.html">Quizzilo</a>
+      <button class="navbar-toggler me-lg-5 me-5" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0 fs-5">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="about.html">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="categories.html">Categories</a>
+          </li>
+        </ul>
+        <form class="d-flex" role="search">
+          <div class="input-group">
+            <span class="input-group-text rounded-start-4">
+              <i class="bi bi-search" style="opacity: 30%;"></i>
+            </span>
+            <input type="text" class="form-control rounded-end-4" placeholder="Search.." />
+          </div>
+        </form>
+      </div>
+    </div>
+  </nav>
+
+  <main class="flex-fill">
+  <!-- Main Content -->
+  <section class="container mt-5 pt-5">
+    <div class="bg-dark text-white p-4 rounded-4 shadow position-relative" style="background-color: #3F306F !important;">
+      
+      <!-- EDIT BUTTON (Move this here) -->
+      <a href="#" class="position-absolute top-0 end-0 mt-3 me-3 text-warning d-flex align-items-center gap-1 text-decoration-none">
+        <i class="bi bi-pencil fs-5"></i> <strong>Edit!</strong>
+      </a>
+  
+      <div class="row align-items-center">
+        <div class="col-md-4 text-center mb-4 mb-md-0">
+          <img src="images/profile_pic.png" alt="About Me" class="img-fluid rounded-4 aboutpic"/>
+        </div>
+        <div class="col-md-8">
+          <p class="fs-2"><span class="text-warning fw-bold">Username :</span> User_123</p>
+          <p class="fs-2"><span class="text-warning fw-bold">Email :</span> aaaakksk@gmail.com</p>
+          <p class="fs-2"><span class="text-warning fw-bold">Join Date :</span> October 20th, 2024</p>
+          <p class="fs-2 mb-1"><span class="text-warning fw-bold">About me :</span></p>
+          <p>Lorem ipsum idk something something</p>
+          <div class="d-flex gap-3 mt-3 flex-wrap">
+            <button class="btn btn-warning fw-bold rounded-4 px-3">Achievements</button>
+            <button class="btn btn-warning fw-bold rounded-4 px-3">Quiz History</button>
+            <button class="btn btn-warning fw-bold rounded-4 px-3">Quizzes Made</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  </main>
+  
+
+  <!-- Footer -->
+  <footer class="text-white d-flex justify-content-between align-items-center px-4 mt-5">
+    <p class="mb-0">© 2025 Copyright</p>
+    <div class="d-flex gap-3 fs-4">
+      <a href="#" class="text-white"><i class="bi bi-instagram"></i></a>
+      <a href="#" class="text-white"><i class="bi bi-twitter"></i></a>
+      <a href="#" class="text-white"><i class="bi bi-envelope-fill"></i></a>
+      <a href="#" class="text-white"><i class="bi bi-youtube"></i></a>
+    </div>
+  </footer>
+</body>
+</html>
