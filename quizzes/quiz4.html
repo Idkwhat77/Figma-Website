@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>All Marvel Superheroes - Quizzilo</title>
+  <link rel="icon" type="image/x-icon" href="/images/tingyunicon">
+  <link rel="stylesheet" href="../css/bootstrap.min.css">
+  <link rel="stylesheet" href="../bootstrap-icons/bootstrap-icons.css">
+  <link rel="stylesheet" href="../style.css">
+  <script src="../js/bootstrap.bundle.min.js"></script>
+</head>
+<body class="d-flex flex-column min-vh-100">
+
+  <!-- Epic Navbar -->
+  <nav class="navbar navbar-dark navbar-expand-lg py-0">
+    <div class="container-fluid">
+      <div class="nav-item dropdown">
+        <a href="#" class="ms-5 d-flex align-items-center text-white text-decoration-none" id="profileDropdown" data-bs-toggle="dropdown" aria-expanded="false">
+          <img src="../images/profile_pic.png" alt="Profile Picture" class="rounded-4" style="width: 48px; height: 48px;">
+        </a>
+        <ul class="dropdown-menu">
+          <li><a class="dropdown-item" href="../profile.html">Profile</a></li>
+          <li><a class="dropdown-item" href="../login.html">Logout</a></li>
+        </ul>
+      </div>
+      <a class="navbar-brand fs-1 ms-lg-5 ms-3" href="../index.html">Quizzilo</a>
+      <button class="navbar-toggler me-lg-5 me-5" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0 fs-5">
+          <li class="nav-item">
+            <a class="nav-link" href="../index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="../about.html">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="../categories.html">Categories</a>
+          </li>
+        </ul>
+        <form class="d-flex" role="search">
+          <div class="input-group">
+            <span class="input-group-text rounded-start-4">
+              <i class="bi bi-search" style="opacity: 30%;"></i>
+            </span>
+            <input type="text" class="form-control rounded-end-4" placeholder="Search.." />
+          </div>
+        </form>
+      </div>
+    </div>
+  </nav>
+
+  <main class="flex-fill">
+    <!-- Main Content-->
+    <nav class="categories rounded-start-4">
+      <h5 class="mb-3 border-bottom pb-2"><i class = "bi bi-list"></i>Popular Categories</h5>
+      <ul class="list-unstyled">
+        <li class="mb-2"><i class="bi bi-geo-alt"></i>  Geography</li>
+        <li class="mb-2"><i class="bi bi-controller"></i>  Gaming</li>
+        <li class="mb-2"><i class="bi bi-film"></i>  Movies</li>
+        <li class="mb-2"><i class="bi bi-music-note"></i>  Music</li>
+        <li class="mb-2"><i class="bi bi-bank"></i>  Politics</li>
+        <li class="mb-2"><i class="bi bi-award"></i>  Sports</li>
+        <li class="mb-2"><i class="bi bi-book"></i>  History</li>
+      </ul>
+    </nav> 
+    <div class="play-headboard ms-4 rounded-4 overflow-hidden">
+      <div class="row g-2 align-items-stretch" style="border-bottom: 2px solid #F6D600;"">
+        
+        <!-- Image -->
+        <div class="col-12 col-md-2 col-lg-2">
+          <img src="../images/spiderman.jpg" class="img-fluid h-100 w-100 object-fit-cover" alt="Map" style="max-height: 120px;">
+        </div>
+    
+        <!-- Text -->
+        <div class="col-12 col-md-4 col-lg-6 d-flex flex-column justify-content-center ps-3">
+          <h4 class="m-0">All Marvel Superheroes</h4>
+          <h5 class="m-0">By 1234fgbd | Movies</h5>
+        </div>
+    
+        <!-- Pause Button -->
+        <div class="col-6 col-md-4 col-lg-2 p-2 d-flex align-items-center justify-content-center">
+          <button class="pause-button btn btn-warning rounded-4">PAUSE</button>
+        </div>
+    
+        <!-- Quit Button -->
+        <div class="col-6 col-md-2 col-lg-2 d-flex align-items-center justify-content-center">
+          <button class="quit-button btn btn-danger rounded-4">QUIT</button>
+        </div>
+      </div>
+
+      <div class="row g-2 align-items-stretch p-3">
+
+        <!-- Type Answer text-->
+        <div class="col-12 col-md-2 col-lg-2 d-flex flex-column justify-content-center ps-3">
+          <h4 class="m-0" style="text-align: center;">Type answer : </h4>
+        </div>
+
+        <!-- Input text -->
+        <div class="col-12 col-md-6 col-lg-6 d-flex flex-column justify-content-center ps-3">
+          <input type="text" placeholder="Type..." class="rounded-4 p-2 answer-type">
+        </div>
+
+        <!-- Guesses Count -->
+        <div class="col-12 col-md-2 col-lg-2 d-flex align-items-center justify-content-center">
+          <h4 class="m-0">0/idk Guessed</h4>
+        </div>
+
+        <!-- Timer -->
+        <div class="col-12 col-md-2 col-lg-2 p-4 rounded-5 d-flex align-items-center justify-content-center border-start bg-white">
+          <h5 class="m-0 timer fs-1">12:00</h5>
+        </div>
+      </div>
+
+      <!-- Table Quiz Section -->
+      <div class="row g-0 align-items-center d-flex align-items-center justify-content-center p-3 g-4">
+        <div class="col-lg-4">
+          <div class="rounded-4 table-responsive">
+            <table class="table table-hover text-center align-middle mb-0 text-break passive-mobs">
+                <tr class="table-info">
+                  <th scope="col">uhh movie 1?</th>
+                </tr>
+              <tbody>
+                <tr>
+                  <td></td>
+                </tr>
+                <tr>
+                  <td></td>
+                </tr>
+                <tr>
+                  <td></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="text-white d-flex justify-content-between align-items-center px-4 mt-5">
+    <p class="mb-0 fs-5">© 2025 Copyright</p>
+    <div class="d-flex gap-3 fs-4">
+      <a href="https://instagram.com/testaccountorch" class="text-white"><i class="bi bi-instagram"></i></a>
+      <a href="https://x.com/singingmonsters?lang=en" class="text-white"><i class="bi bi-twitter"></i></a>
+      <a href="randomemail@gmail.com" class="text-white"><i class="bi bi-envelope-fill"></i></a>
+      <a href="https://www.youtube.com/channel/UCiZ2z8F8ilr6SC7lOaxAQ4g" class="text-white"><i class="bi bi-youtube"></i></a>
+    </div>
+  </footer>
+
+</body>
+</html>

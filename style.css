@@ -159,20 +159,47 @@ input::placeholder {
     color: rgb(204, 204, 204);;
 }
 
-.login-form {
-    background-color: white;
-    width: 400px;
+.login-page {
+    height: auto;
+    background-color:#3F306F;
+    width: 100%;
+}
+
+.title {
+    font-size: 3rem;
+}
+
+.logopic {
+    height: auto;
+    width: 300px;
     height: 100%;
 }
 
-.login-form h2 {
+@media (max-width: 576px) {
+    .login-form {
+      width: 100%;
+      max-width: 75vw;
+      padding: 1.5rem;
+    }
+  
+    .login-page {
+      padding: 1rem;
+    }
+  }
+
+.login-form {
+    background-color: white;
+    width: 400px;
+    height: auto;
+}
+
+.login-form h1 {
     color: #2A1F4B;
 }
 
 .login-form input {
     border: 2px solid rgb(204, 204, 204);
     border-radius: 10px;
-    height: 40px;
     width: 100%;
 }
 .login-form h5 {
@@ -181,11 +208,34 @@ input::placeholder {
 .login-button {
     background-color: #F6D600;
     color: black;
-    width: 50%;
+    width: 100%;
+}
+
+.login-button:hover {
+    background-color: #ffe438;
+    color: black;
 }
 
 .signup-button {
     background-color: #3F306F;
     color: white;
-    width: 50%;
+    width: 100%;
+}
+
+.signup-button:hover {
+    background-color: #544489;
+}
+
+.forgot-password {
+    color: #3F306F;
+}
+
+.achievements-page {
+    background-color: #3F306F;
+    width: 70vw;
+}
+
+.achievement-block {
+    background-color:#544489;
+    width: 90%;
 }
