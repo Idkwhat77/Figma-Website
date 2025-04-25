@@ -132,10 +132,14 @@ footer {
 .play-headboard {
     color: white;
     background-color: #3F306F;
-    width: 80vw;
     margin-top: 6rem;
 }
 
+@media (min-width: 992px) {
+    .w-lg-80 {
+      width: 80%;
+    }
+  }
 
 .pause-button {
     height: 60px;
@@ -152,6 +156,7 @@ footer {
 .timer {
     background-color: white;
     color: black;
+    width: auto;
 }
 
 input::placeholder {
@@ -163,6 +168,7 @@ input::placeholder {
     height: auto;
     background-color:#3F306F;
     width: 100%;
+    border: 3px #F6D600 solid;
 }
 
 .title {
